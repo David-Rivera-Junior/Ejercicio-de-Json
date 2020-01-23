@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practica</title>
+</head>
+
+<body>
+    <script>
+        /* var persona = {
+             name: " Steven ",
+             lastname: " Chavez ",
+             Hablar: function () {
+                 alert("Hola")
+             },
+             Tipo: {
+                 TipoPersona: "Bien", id: 01
+             }
+ 
+         };
+         console.log(persona.name + "" + persona.lastname);
+         persona.Hablar();
+         alert(persona.Tipo.TipoPersona);
+ 
+ 
+         var Mundo = {
+             name: " David ",
+             lastname: " Rivera ",
+             Conquistar: function () {
+                 alert(" El Mundo")
+             },
+             persona: {
+                 PersonaSalvadoreña: " La Magia ", id: 02
+             }
+         };
+ 
+         console.log(Mundo.name + "" + Mundo.lastname);
+         Mundo.Conquistar();
+         alert(Mundo.persona.PersonaSalvadoreña);
+ 
+         let lista = [{ name: " David ", lastname: " Rivera " }]
+ 
+         lista.forEach(items => {
+             alert(items.name + "" + items.lastname);
+ 
+         });*/
+
+        let personas = [{
+            nombre: " Jose ", direccion: " la nada ", Hablar: function () { alert(" Soy " + personas[0].nombre +" Mi amiga es "+ personas[1].nombre); },
+            mama: { nombre: " Julia ", apellido: " Tobar " }, Papa: { nombre: " Julio ", apellido: " Mejia " }
+        },
+        {
+            nombre: " Maria ", direccion: " Por alla ", Hablar: function () { alert(" Soy " + personas[1].nombre +" Mi madre es: "+ personas[1].mama.nombre); },
+            mama: { nombre: "Juana", apellido: "Perez" }, Papa: { nombre: "Jose", apellido: " Tobar " }
+        },
+        {
+            nombre: " Elmer ", direccion: " por ahi ", Hablar: function () { alert(" soy " + personas[2].nombre +"Mi amiga es"+ personas[1].nombre + "Mi amigo es "+ personas[0].nombre); },
+            mama: { nombre: " Teresa ", apellido: " Martinez " }, Papa: { nombre: " Jose ", apellido: " Ramos " }
+        },
+        {
+            nombre: " Rony ", direccion: " Apaneca ", Hablar: function () { alert(" soy " + personas[3].nombre ); },
+            edad: 20
+        }
+
+        ]
+
+       // personas.forEach(a => {
+           // alert(a.nombre + " vive en " + a.direccion + "su mama se llama " + a.mama.nombre + " su papa se llama " + a.Papa.nombre + " " + a.Papa.apellido);
+
+        //});
+       // alert(personas[0].nombre + " " + personas[0].direccion);
+
+       alert(personas[0].mama.nombre);
+       personas[0].Hablar(); 
+       alert(personas[2].Papa.apellido);  
+       personas[1].Hablar(); 
+       alert(" Apellido de la mama " +personas[1].mama.apellido + " El apellido de papa es " + personas[1].Papa.apellido);  
+       personas[0].Hablar();
+       personas[2].Hablar();
+       alert(personas[3].nombre +" Mi edad es "+ personas[3].edad +" Vivo en "+ personas[3].direccion);
+    </script>
+
+</body>
+
+</html>
